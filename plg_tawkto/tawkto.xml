@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>System - tawk.to</name>
+	<creationDate>2024-09-20</creationDate>
+	<author>tawk.to</author>
+	<authorEmail>accounts@tawk.to</authorEmail>
+	<authorUrl>https://tawk.to</authorUrl>
+	<copyright>Copyright (C) 2024 Tawk.to. All rights reserved.</copyright>
+	<license>GPL 3.0</license>
+	<version>4.0.0</version>
+	<description><![CDATA[tawk.to is a <strong>free</strong> messaging app that lets you <strong>monitor</strong> and <strong>chat</strong> with <strong>visitors</strong>]]></description>
+	<namespace path="src">Joomla\Plugin\System\Tawkto</namespace>
+	<files>
+		<filename plugin="tawkto">tawkto.php</filename>
+		<filename>README.md</filename>
+		<folder>src</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldprefix="Joomla\Plugin\System\Tawkto\Field">
+				<field name="tawkto_select_widget" type="selectwidget" default="" label=" " description="" />
+				<field name="tawkto_siteid" type="text" default="" label="tawk.to Site I.D." description=""/>
+				<field name="tawkto_widget" type="text" default="" label="Widget" description=""/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
